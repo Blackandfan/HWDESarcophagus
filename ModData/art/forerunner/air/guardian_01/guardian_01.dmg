@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<damagetemplate>
+	<percentagebased>
+		<event>
+			<action type="throwpart" impactsound="impact_med_metal" streamereffect="effects\building_FX\cov\damage\smallelectricity_01">Tail6_L</action>
+		</event>
+		<event>
+			<action type="throwpart" impactsound="impact_med_metal" streamereffect="effects\building_FX\cov\damage\smallelectricity_01">MainWingTR</action>
+		</event>
+		<event>
+			<action type="throwpart" impactsound="impact_med_metal" streamereffect="effects\building_FX\cov\damage\smallelectricity_01">Tail6_R,Tail5_L</action>
+		</event>
+		<event>
+			<action type="throwpart" impactsound="impact_med_metal" streamereffect="effects\building_FX\cov\damage\smallelectricity_01">Tail4_L,Tail4_R</action>
+		</event>
+		<event>
+			<action type="throwpart" impactsound="impact_med_metal" streamereffect="effects\building_FX\cov\damage\smallelectricity_01">EyeSocket_Top,Tail1_R</action>
+		</event>
+	</percentagebased>
+	<impactpointbased />
+	<cryopercentagebased>
+		<event />
+		<event />
+		<event />
+		<event />
+		<event>
+			<action type="attachparticle" effect="effects\cryo_bomb\unit_freezing_medium">GrannyRootBone</action>
+			<action type="playsound">play_cryo_bomb_freezing</action>
+		</event>
+	</cryopercentagebased>
+	<shatterdeathevent>
+		<action type="attachparticle" effect="effects\cryo_bomb\unit_shatter_medium">GrannyRootBone</action>
+		<action type="playsound">play_cryo_impact</action>
+	</shatterdeathevent>
+</damagetemplate>

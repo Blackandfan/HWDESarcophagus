@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<damagetemplate>
+	<percentagebased>
+		<event>
+			<action type="swappart">ObjectRThruster,ObjectRThrusterdamaged</action>
+		</event>
+		<event>
+			<action type="swappart">ObjectLShieldGen,ObjectLShieldGenmediumdamaged</action>
+			<action type="swappart">ObjectLRocket,ObjectLRocketdamaged</action>
+		</event>
+		<event>
+			<action type="swappart">ObjectEye,ObjectEyedamaged</action>
+			<action type="attachparticle" effect="effects\building_fx\cov\damage\plasmafire_01"></action>
+		</event>
+		<event>
+			<action type="swappart">ObjectHull,ObjectHulldamaged</action>
+			<action type="swappart">ObjectRShieldGen,ObjectRShieldGendamaged</action>
+			<action type="swappart">ObjectLShieldGenmediumdamaged,ObjectLShieldGendamaged</action>
+		</event>
+		<event>
+			<action type="throwpart" impactsound="impact_med_metal">ObjectLArmdamaged</action>
+			<action type="throwpart" impactsound="impact_med_metal">ObjectRShieldGendamaged</action>
+			<action type="throwpart" impactsound="impact_med_metal" streamereffect="effects\building_FX\cov\damage\smallelectricity_01">ObjectHulldamaged</action>
+			<action type="throwpart" impactsound="impact_med_metal" streamereffect="effects\building_FX\cov\damage\smallelectricity_01">ObjectRRocket</action>
+			<action type="throwpart" impactsound="impact_med_metal" streamereffect="effects\building_FX\cov\damage\smallelectricity_01">ObjectLThruster</action>
+			<action type="throwpart" impactsound="impact_med_metal">ObjectLShieldGendamaged</action>
+			<action type="throwpart" impactsound="impact_med_metal" streamereffect="effects\building_FX\cov\damage\smallelectricity_01">ObjectEyedamaged</action>
+			<action type="playsound">play_forerunner_super_sentinel_death</action>
+		</event>
+	</percentagebased>
+	<impactpointbased>
+	</impactpointbased>
+	<cryopercentagebased>
+		<event />
+		<event />
+		<event />
+		<event />
+		<event>
+			<action type="attachparticle" effect="effects\cryo_bomb\unit_freezing_medium">GrannyRootBone</action>
+			<action type="playsound">play_cryo_bomb_freezing</action>
+		</event>
+	</cryopercentagebased>
+	<shatterdeathevent>
+	</shatterdeathevent>
+</damagetemplate>

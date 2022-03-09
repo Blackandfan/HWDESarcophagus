@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<damagetemplate>
+	<percentagebased>
+		<event>
+			<action type="throwpart">Object039</action>
+		</event>
+		<event>
+			<action type="throwpart">Object036,Object038</action>
+		</event>
+		<event>
+			<action type="attachparticle" effect="effects\building_fx\cov\damage\plasmafire_01">Object017</action>
+		</event>
+		<event>
+			<action type="throwpart" streamereffect="effects\building_FX\cov\damage\smallelectricity_01">Object031</action>
+		</event>
+		<event>
+			<action type="throwpart">Object016</action>
+			<action type="throwpart">Object017</action>
+			<action type="throwpart">Object018</action>
+			<action type="throwpart">Object019</action>
+			<action type="throwpart">Object022</action>
+			<action type="throwpart">Object023</action>
+			<action type="throwpart">Object024</action>
+			<action type="throwpart">Object025</action>
+			<action type="throwpart">Object030</action>
+			<action type="throwpart">Object033</action>
+			<action type="throwpart">Object035</action>
+			<action type="throwpart">Object034</action>
+			<action type="throwpart">Object037</action>
+			<action type="throwpart" streamereffect="effects\building_FX\cov\damage\smallelectricity_01">Object017</action>
+			<action type="attachparticle" effect="effects\building_fx\unsc\damage\techdamage_01">Object001</action>
+			<action type="attachparticle" effect="effects\building_fx\unsc\damage\techdamage_01">Object002</action>
+			<action type="throwpart" streamereffect="effects\building_FX\cov\damage\smallelectricity_01">Object003</action>
+			<action type="throwpart" streamereffect="effects\building_FX\cov\damage\smallelectricity_01">Object004</action>
+			<action type="throwpart" streamereffect="effects\building_FX\cov\damage\smallelectricity_01">Object006</action>
+			<action type="throwpart" streamereffect="effects\building_FX\cov\damage\smallelectricity_01">Object011</action>
+			<action type="throwpart" impactsound="impact_med_metal" streamereffect="effects\building_FX\cov\damage\smallelectricity_01">Object015</action>
+			<action type="throwattachment" streamereffect="effects\building_fx\unsc\damage\techdamage_01">BoneTurret</action>
+			<action type="throwattachment" streamereffect="effects\building_fx\unsc\damage\techdamage_01">BoneLGun</action>
+			<action type="throwattachment" streamereffect="effects\building_fx\unsc\damage\techdamage_01">BoneRGun</action>
+			<action type="playsound">play_vampire_death</action>
+		</event>
+	</percentagebased>
+	<impactpointbased>
+		<impactpoint bone="bone_impact_01">
+			<event />
+			<event />
+			<event />
+			<event />
+			<event />
+			<event>
+				<action type="throwpart" impactsound="impact_med_metal" streamereffect="effects\building_FX\cov\damage\smallelectricity_01">Object032</action>
+				<action type="playsound">play_impact_building_damage_release_explosion_med</action>
+				<action type="playsound">play_impact_building_damage_release_electric</action>
+			</event>
+			<event />
+		</impactpoint>
+	</impactpointbased>
+	<cryopercentagebased>
+		<event />
+		<event />
+		<event />
+		<event />
+		<event>
+			<action type="attachparticle" effect="effects\cryo_bomb\unit_freezing_medium">GrannyRootBone</action>
+			<action type="playsound">play_cryo_bomb_freezing</action>
+		</event>
+	</cryopercentagebased>
+	<shatterdeathevent>
+		<action type="throwpart" blueprint="icePart" impactsound="impact_med_metal" streamereffect="effects\building_FX\cov\damage\smallelectricity_01">Object035,Object033,Object001,Object002,Object003</action>
+		<action type="throwpart" blueprint="icePart" impactsound="impact_med_metal" streamereffect="effects\building_FX\cov\damage\smallelectricity_01">Object034,Object017,Object004,Object006,Object011,Object015</action>
+		<action type="attachparticle" effect="effects\cryo_bomb\shatter_01">GrannyRootBone</action>
+		<action type="playsound">play_cryo_impact</action>
+	</shatterdeathevent>
+</damagetemplate>

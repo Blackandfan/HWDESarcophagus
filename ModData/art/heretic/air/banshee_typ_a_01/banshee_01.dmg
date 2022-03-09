@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<damagetemplate>
+	<percentagebased>
+		<event />
+		<event>
+			<action type="swappart">podleft,podleftdamaged</action>
+			<action type="swappart">podleftdest,podleftdestdamaged</action>
+		</event>
+		<event>
+			<action type="attachparticle" effect="effects\building_fx\cov\damage\plasmafire_01">Hull</action>
+			<action type="swappart">podright,podrightdamaged</action>
+			<action type="swappart">rudderleft,rudderleftdamaged</action>
+			<action type="swappart">podrightdest,podrightdestdamaged</action>
+		</event>
+		<event>
+			<action type="swappart">podrightdamaged,podrightdestroyeddamaged</action>
+			<action type="swappart">podrightdestroyeddest,podrightdestroyeddestdamaged</action>
+			<action type="swappart">rudderrightdest,rudderrightdestdamaged</action>
+			<action type="swappart">rudderright,rudderrightdamaged</action>
+			<action type="swappart">cab,cabdamaged</action>
+			<action type="swappart">cabdest,cabdestdamaged</action>
+		</event>
+		<event>
+			<action type="swappart">Hull,Hulldamaged</action>
+			<action type="swappart">hulldest,hulldestdamaged</action>
+		</event>
+		<event>
+			<action type="throwpart">podleftdamaged</action>
+			<action type="throwpart" impactsound="impact_med_metal" streamereffect="effects\building_FX\cov\damage\smallelectricity_01">Hulldamaged</action>
+			<action type="throwpart">podrightdamaged</action>
+			<action type="throwpart">rudderleftdamaged</action>
+			<action type="throwpart">podrightdestroyeddamaged</action>
+			<action type="throwpart">rudderrightdamaged</action>
+			<action type="throwpart">cabdamaged</action>
+			<action type="throwpart">gun</action>
+		</event>
+	</percentagebased>
+	<impactpointbased />
+	<cryopercentagebased>
+		<event />
+		<event />
+		<event />
+		<event />
+		<event>
+			<action type="attachparticle" effect="effects\cryo_bomb\unit_freezing_medium">GrannyRootBone</action>
+			<action type="playsound">play_cryo_bomb_freezing</action>
+		</event>
+	</cryopercentagebased>
+	<shatterdeathevent>
+		<action type="throwpart" blueprint="icePart" streamereffect="effects\building_FX\cov\damage\smallelectricity_01">podleft,podright,rudderleft,podrightdestroyed,rudderright,cab,gun</action>
+		<action type="throwpart" blueprint="icePart" impactsound="impact_med_metal" streamereffect="effects\building_FX\cov\damage\smallelectricity_01">Hull</action>
+		<action type="attachparticle" effect="effects\cryo_bomb\unit_shatter_medium">GrannyRootBone</action>
+		<action type="playsound">play_cryo_impact</action>
+	</shatterdeathevent>
+</damagetemplate>
